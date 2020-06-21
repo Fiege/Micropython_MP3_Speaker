@@ -1,11 +1,11 @@
-I was looking around to implement a motion based MP3 loudspeaker box to place it some corner of my bathroom so every time I enter it it plays some music.
-So I came to the DFPlayer modul which I added to one of my WemosD1 Mini.
-It plays mp3 files stored on an micro sd card, could directly connected to a loudspeaker and is controlled using commands send by a serial connection.
-I also added a PIR sensor for motion detection and an LDR because I don't want the music played in the night.<BR>
+I was looking around to implement a motion based MP3 loudspeaker box to place it some corner of my bathroom so every time I enter it it plays some music. <BR><BR>
+So I came to the DFPlayer modul which I added to one of my WemosD1 Mini. <BR>
+It plays mp3 files stored on an micro SD card, could directly connected to a loudspeaker and is controlled using commands send by a serial connection. <BR>
+I also added a PIR sensor for motion detection and an LDR because I don't want the music played in the night.<BR><BR><BR>
 So this is the elctrical setup:<BR><BR>
 ![](https://github.com/Fiege/Micropython_MP3_Speaker/blob/master/MP3_Player_Schaltplan.png?raw=true)
-  <BR>
-About the code: <BR>
+  <BR><BR>
+About the code: <BR><BR>
 I took two files for the serial communication and the MP3 player control from the project in this Github repo and added my own main.py to it (thank to mlupo): <BR>
 
 https://github.com/mlupo/micropython-yx5300
