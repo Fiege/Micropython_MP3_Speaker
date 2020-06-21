@@ -16,7 +16,7 @@ from machine import Pin
  
 
 lvlDark = 3 # At which level of light the music should not play
-playVol = 12 #12
+playVol = 12 #12 Define how loud should the music play 
 bsy = Pin(0, Pin.IN)
 brght = machine.ADC(0)
 snsMove = Pin(5, Pin.IN) 
@@ -54,7 +54,7 @@ while True:
                     mp3.next()
                 #endif
             #endif
-        else: #es ist dunkel, schalte musik ab, falls sie spielt
+        else: #it's dark, stop music if it is playing
             if (bsy.value()==0): # it is playing
                 print("pausing")
                 mp3.pause()
